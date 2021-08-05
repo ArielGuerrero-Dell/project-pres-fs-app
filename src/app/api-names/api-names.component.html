@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="api-names.component.css">
+        <title>api-name-component</title>
+    </head>
+
+    <body>
+
+        <div *ngIf="tmp_api.is_valid==='false' else notShow">
+            <label id="equery" class="act"> {{tmp_api.suggested_name}}</label>
+        </div>
+
+        <ng-template #notShow>
+            <div id="sugnamediv">
+                <label id="suglbl" class="lbl">Suggested Name:</label>
+                <p id="sugname"> {{tmp_api.suggested_name}}</p>
+            </div>
+
+            <div id="prodlistdiv">
+                <label id="asclbl" class="lbl">Associated Products:</label>
+
+                <tr *ngFor="let product of tmp_api.product_list">
+                    <p id="prodlist">{{product}}</p>
+                </tr>
+            </div>
+
+        </ng-template>
+    </body>
+
+</html>

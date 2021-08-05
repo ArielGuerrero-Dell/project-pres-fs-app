@@ -1,0 +1,36 @@
+
+/* Application-wide Styles */
+h1 {
+    color: #0076CE;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+    text-align: center;
+    margin-bottom: 5%;
+    /* text-decoration: #0076CE underline wavy; */
+    text-transform: uppercase;
+  }
+  h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  body, input[type="text"], button {
+    color: #333;
+    font-family: Cambria, Georgia, serif;
+  }
+  /* everywhere else */
+  *, *:before, *:after {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .btn  {
+  
+   
+    background-color: #0076CE;
+   
+}
+.btn:active {
+    background-color:#41B6E6;
+    
+}

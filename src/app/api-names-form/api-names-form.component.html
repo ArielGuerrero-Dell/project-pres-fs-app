@@ -1,0 +1,28 @@
+<form>
+
+    <div class="container">
+
+        <div class="container2">
+
+            <label for="iapiname" id="apinamelbl">API Name </label>
+
+            <input #apiname type="text" [(ngModel)]="iapiname" name="iapiname" id="iapiname" required>
+
+            <button (click)="submitNewAPIName(apiname.value)" class="btn btn-primary" style="margin-left: 30px;">
+                <span>submit</span>
+            </button>
+
+        </div>
+
+        <div class="container3">
+            <app-api-names [tmp_api]='model'></app-api-names>
+        </div>
+
+
+        <button class="btn btn-primary" (click)='clearForm()' style="margin-top: 10px;">
+            <span>clear</span>
+        </button>
+
+    </div>
+
+</form>
