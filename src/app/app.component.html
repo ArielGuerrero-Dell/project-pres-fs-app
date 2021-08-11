@@ -42,7 +42,7 @@
         </div>
     </nav>
 
-    <br>
+    <h1 style="padding-top: 50px;">{{title}}</h1>
 
     <!-- about me -->
     <div class="b-example-divider"></div>
@@ -63,12 +63,16 @@
                 <div>
                     <h2>Me</h2>
                     <p>
-                        I enjoy gaming, building computers, collecting old tech, and drinking coffee. (batteries not
-                        included)
+                        I enjoy gaming, building computers, collecting tech, and drinking coffee.
                     </p>
                     <!-- Button trigger edu modal -->
                     <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meModal">
-                        Look at me
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
                     </a>
 
 
@@ -126,7 +130,7 @@
 
     <!-- me Modal -->
     <div class="modal fade" id="meModal" aria-labelledby="meModalLabel" aria-hidden="true">
-        <div class="modal-dialog  modal-lg">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
 
@@ -136,8 +140,7 @@
                     <img src="../assets/imgs/me2.jpg" style="max-width: 79%; max-height: 79%; border-radius: 100%;">
 
                     <p style="font-size: larger; font-weight: bolder; margin-top: 50px;"> Hello everyone, Nice to meet
-                        you all. My name is
-                        Guerrero! </p>
+                        you all. My name is Ariel Guerrero! </p>
                 </div>
                 <div class="modal-footer">
                     <a class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
@@ -156,10 +159,10 @@
                 </div>
                 <div class="modal-body" style="text-align: center;">
                     <img src="../assets/imgs/utsa.png" style="max-width: 99%; max-height: 99%;">
-                    <p style="font-size:larger; font-weight: bolder;"> Im currently a rising senior going for a
+                    <p style="font-size:larger; font-weight: bolder;"> Senior going for a
                         bachelors in Computer
                         Science with a
-                        concentration in Data Science! </p>
+                        concentration in Data Science and Software Engineering! </p>
                 </div>
                 <div class="modal-footer">
                     <a class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
@@ -170,7 +173,7 @@
 
     <!-- Team Modal -->
     <div class="modal fade" id="teamModal" aria-labelledby="teamModalLabel" aria-hidden="true">
-        <div class="modal-dialog  modal-lg">
+        <div class="modal-dialog ">
             <div class="modal-content">
                 <div class="modal-header">
 
@@ -184,8 +187,7 @@
                     </svg>
 
                     <p style="font-size: larger; font-weight: bolder; margin-top: 50px;">
-                        Im am on the Cloud Enablement team, working under my fantastic manager Ashok and amazing team
-                        members!</p>
+                        Im am on the Cloud Enablement/Api Marketplace team.</p>
                 </div>
                 <div class="modal-footer">
                     <a class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
@@ -276,7 +278,7 @@
     <!-- project info -->
     <div class="b-example-divider"></div>
     <div class="container px-4 py-5" id="hanging-icons">
-        <h2 class="pb-2 border-bottom">Relative Project Info</h2>
+        <h2 class="pb-2 border-bottom">Project Insight</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div class="col d-flex align-items-start">
                 <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
@@ -291,17 +293,16 @@
                         be simple, intuitive, and consistent.
                     </p>
                     <a href="https://confluence.dell.com/pages/viewpage.action?pageId=378441368" target="_blank"
-                        class="btn btn-primary">
+                        style="margin: 5px;" class="btn btn-primary">
                         Go To Docs
                     </a>
                     <!-- Button trigger ls modal -->
                     <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lifecycleModal"
-                        style="margin-left: 5px;">
-                        View Dev Process
+                        style="margin: 5px;">
+                        View Process
                     </a>
                     <!-- Button trigger DF modal -->
-                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dflowModal"
-                        style="margin-left: 5px;">
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dflowModal" style="margin: 5px;">
                         Data Flow
                     </a>
                 </div>
@@ -316,17 +317,18 @@
                 <div>
                     <h2>Accountability</h2>
                     <p>
-                        We here at dell want to hold our Devs accountable and what better way than to provide their APIs
+                        We here at Dell want to hold our Devs accountable and what better way than to provide their APIs
                         with a score.
                         With improper naming Devs can expect lower scores, therfore influencing them to name their APIs
                         appropriately.
                     </p>
                     <!-- Button trigger modal -->
-                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scorecardModal">
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scorecardModal"
+                        style="margin: 5px;">
                         View Score Card
                     </a>
                     <a class="btn btn-primary" href="https://api-marketplace.dell.com/#/explore" target="_blank"
-                        style="margin-left: 5px;">
+                        style="margin: 5px;">
                         View Api Names
                     </a>
 
@@ -346,7 +348,7 @@
 
                     <a href="https://api-marketplace-tst.dell.com/#/mydashboard" target="_blank" class="btn btn-primary"
                         style="margin-top: 29px;">
-                        End Usage
+                        View Usage
                     </a>
                 </div>
             </div>
@@ -356,18 +358,67 @@
 
     <!-- Modal for api score card -->
     <div class="modal fade" id="scorecardModal" aria-labelledby="scorecardModalLabel" aria-hidden="true">
-        <div class="modal-dialog  modal-lg">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
+
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Demo Api Scorecard</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <img src="../assets/imgs/api-scorecard.jpg" style="max-width: 90%; max-height: 90%;">
+
+
+                <div class="modal-body ">
+
+                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+
+                        </div>
+
+                        <div class="carousel-inner active" style="text-align: center;">
+                            <div class="carousel-item active">
+                                <img src="../assets/imgs/api-score-card.PNG">
+
+                                <svg width="100%" height="90%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                </svg>
+
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="../assets/imgs/api-score-card-2.PNG">
+
+                                <svg width="100%" height="90%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                </svg>
+
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+
                 </div>
+
                 <div class="modal-footer">
                     <a class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
                 </div>
+
             </div>
         </div>
     </div>
@@ -464,16 +515,14 @@
     <!-- Demo app -->
     <div class="b-example-divider"></div>
     <div class="container" style="align-items: center;">
-        <h2 class="pb-2 border-bottom" style="margin-bottom: 30px;">{{title}}</h2>
-        <!-- <div id="container0"> -->
+        <h2 class="pb-2 border-bottom" style="margin-bottom: 30px;">Project Demo</h2>
         <app-api-names-form></app-api-names-form>
-        <!-- </div> -->
     </div>
 
     <!-- takeaways -->
     <div class="b-example-divider" style="margin-top:50px;"></div>
     <div class="container px-4 py-5" id="hanging-icons">
-        <h2 class="pb-2 border-bottom">Takeaways</h2>
+        <h2 class="pb-2 border-bottom">Key Takeaways</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
 
             <!-- tech -->
@@ -486,7 +535,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h2>Tchnologies</h2>
+                    <h2>Technologies</h2>
                     <p>
                         New technologies I had the privalege of learning this summer!
                     </p>
@@ -554,28 +603,31 @@
 
     <!-- ip Modal -->
     <div class="modal fade" id="ipModal" aria-labelledby="ipModalLabel" aria-hidden="true">
-        <div class="modal-dialog  modal-lg">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
 
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" style="text-align: center;">
+                <div class="modal-body">
 
 
-                    <p style="font-size: large; font-weight: bolder; margin-top: 50px;"> </p>
+                    <p style="font-size: large; font-weight: bolder; text-align: center;">
+                        My interpersonal takeaways this summer! </p>
 
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Culture</li>
+                        <li>Agile </li>
+                        <li>Leadership</li>
+                        <li>Teamwork</li>
+
                     </ul>
 
+                    <p style="font-size: large;">Last but not least individuals and interactions over processes and
+                        tools!</p>
 
                 </div>
-                <div class="modal-footer">
+                <div class=" modal-footer">
                     <a class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
                 </div>
             </div>
